@@ -1,0 +1,80 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: 20px 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.sidebar :global(.ant-menu) {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 16px 0;
+}
+
+.sidebar :global(.ant-menu-item) {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.sidebar :global(.ant-menu-item-selected) {
+  background-color: rgba(24, 144, 255, 0.2) !important;
+  color: #1890ff !important;
+}
+
+.sidebar :global(.ant-menu-item:hover) {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar-footer {
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-details {
+  flex: 1;
+  overflow: hidden;
+}
+
+.username {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.points {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
